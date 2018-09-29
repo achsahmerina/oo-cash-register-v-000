@@ -6,6 +6,7 @@ class CashRegister
     @total = total
     @discount = discount
     @title = []
+    @increase = increase
 
   end
 
