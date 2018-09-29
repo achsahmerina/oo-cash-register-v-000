@@ -12,7 +12,8 @@ class CashRegister
     @total += price * increases
   end
 end
-
+ def apply_discount
+ end
 
 
 
