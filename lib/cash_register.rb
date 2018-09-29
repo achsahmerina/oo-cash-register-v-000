@@ -15,6 +15,8 @@ end
     item_name[:increases] = increases
 
     @transaction << item_name
+    @total += price * quantity
+  end
 # def apply_discount
   # if @discount == 0
   #   "There is no discount to apply."
