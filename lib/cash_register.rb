@@ -16,7 +16,7 @@ class CashRegister
       i -= 1
     end
   end
-
+end
  def apply_discount
    if @discount == 0
      "There is no discount to apply."
