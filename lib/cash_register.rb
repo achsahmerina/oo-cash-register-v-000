@@ -14,7 +14,7 @@ class CashRegister
     @total += price * increase
     @transactions << price
     i = increase
-    suntil i == 0 do
+    until i == 0 do
     @items << title
     i -= 1
   end
