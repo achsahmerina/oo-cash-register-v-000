@@ -7,10 +7,12 @@ class CashRegister
     @price = price
     @increases = increases
     @items = []
+    @transactions = []
   end
 
   def add_item(title, price, increases = 1)
     @total += price * increases
+    @transactions << price
     i = increases
     until i == 0 do
       @items << title
