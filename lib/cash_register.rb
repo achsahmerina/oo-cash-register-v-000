@@ -1,3 +1,9 @@
+class CashRegister
+end
+
+
+
+
 
 #class CashRegister
   #attr_accessor :total, :discount, :title, :previous_total, :items, :void_last_transaction
