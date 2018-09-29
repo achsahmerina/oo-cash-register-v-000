@@ -17,6 +17,7 @@ end
      "There is no discount to apply."
    else
      self.total -= ( (0.01 * @discount * @total).to_i)
+    
   end
  end
 
