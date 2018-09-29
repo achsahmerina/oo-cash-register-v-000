@@ -5,7 +5,7 @@ class CashRegister
     @discount = discount
     @price = price
     @increases= increases
-    @items = []
+    @cart = []
     @transactions = []
   end
    def add_item(title, price, increases = 1)
@@ -13,7 +13,7 @@ class CashRegister
     @transactions << price
     i = increases
     until i == 0 do
-      @items << title
+      @cart << title
       i -= 1
     end
   end
