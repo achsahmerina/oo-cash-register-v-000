@@ -6,7 +6,7 @@ class CashRegister
     @discount = discount
     @price = price
     @transaction = []
-end
+  end
 
   def add_item(title, price, increases = 1)
     item_name = {}
@@ -17,6 +17,7 @@ end
     @transaction << item_name
     @total += price * quantity
   end
+  dn
 # def apply_discount
   # if @discount == 0
   #   "There is no discount to apply."
