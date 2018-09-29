@@ -6,24 +6,27 @@ class CashRegister
     @total = total
     @discount = discount
     @title = []
-    
+
   end
 
   def add_item(title, price, increase = 1)
-    shopping_list = {}
-
-    self.total = price * increase
-    @title << title
+    @total += price * quantity
+    @transactions << price
+    i = quantity
+    suntil i == 0 do
+    @items << title
+    i -= 1
   end
 
   def apply_discount
-    if self.discount == 0
+    if @discount == 0
       "There is no discount to apply."
     else
       self.total -= (0.01 * @discount * @total).to_i
       "After the discount, the total comes to $#{self.total}."
     end
   end
+
   def items
     items = {}
     @items
