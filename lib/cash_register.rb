@@ -27,6 +27,9 @@ end
   end
  end
 
+def items
+  @items
+end
 
 
 
